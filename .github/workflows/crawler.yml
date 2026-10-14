@@ -1,6 +1,11 @@
 name: Get Hot News
 
 on:
+  push:
+    branches: [master]
+    paths:
+      - 'config/**'
+      - '.github/workflows/crawler.yml'
   schedule:
     # ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
     # ⚠️ 试用版说明 / Trial Mode
